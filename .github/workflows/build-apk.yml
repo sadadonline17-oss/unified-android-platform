@@ -28,19 +28,24 @@ jobs:
         with:
           channel: 'stable'
 
+      - name: Create local.properties
+        working-directory: android
+        run: |
+          echo "flutter.sdk=$FLUTTER_ROOT" > local.properties
+          echo "flutter.versionCode=1" >> local.properties
+          echo "flutter.versionName=1.0.0" >> local.properties
+
       - name: Install Dependencies
         run: flutter pub get
-        working-directory: android/android
 
       - name: Build APK
         run: flutter build apk --release
-        working-directory: android/android
 
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:
           name: app-release-apk
-          path: android/android/build/app/outputs/flutter-apk/app-release.apk
+          path: build/app/outputs/flutter-apk/app-release.apk
 
       - name: Create Release
         if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
