@@ -1,0 +1,13 @@
+{
+  "name": "unified-android-platform-script",
+  "version": "1.0.0",
+  "description": "Script to push code to GitHub and build APK",
+  "main": "push_and_build.js",
+  "scripts": {
+    "start": "node push_and_build.js"
+  },
+  "dependencies": {
+    "axios": "^1.7.0",
+    "shelljs": "^0.8.5"
+  }
+}
