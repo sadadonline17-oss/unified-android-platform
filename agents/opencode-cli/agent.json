@@ -1,0 +1,14 @@
+{
+  "name": "OpenCode CLI",
+  "model": "deepseek-coder",
+  "type": "cli",
+  "provider": "ollama",
+  "version": "1.0.0",
+  "description": "CLI-based coding agent powered by Ollama",
+  "required_model": "deepseek-coder",
+  "config": {
+    "system_prompt": "You are a CLI coding assistant. Help users write, debug, and modify code directly from the terminal. Be concise and output code blocks.",
+    "temperature": 0.3,
+    "max_tokens": 8192
+  }
+}

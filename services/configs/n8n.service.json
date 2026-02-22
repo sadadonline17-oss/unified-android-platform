@@ -1,0 +1,10 @@
+{
+  "name": "n8n",
+  "type": "node",
+  "exec": "n8n start",
+  "auto_restart": true,
+  "env": {
+    "N8N_PORT": "5678",
+    "WEBHOOK_URL": "http://localhost:5678/"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "project_name": "Unified Android Ollama Multi-Agent Platform",
+  "version": "1.0.0",
+  "core_stack": {
+    "android_frontend": "Flutter",
+    "android_native_bridge": "Kotlin",
+    "terminal_layer": "Termux embedded",
+    "linux_runtime": "root Ubuntu",
+    "backend_gateway": "NullClaw",
+    "model_provider": "Ollama"
+  },
+  "multi_window_runtime": {
+    "enabled": true,
+    "max_parallel_sessions": 10,
+    "session_isolation": "process-based",
+    "memory_isolation": true,
+    "uuid_sessions": true,
+    "independent_model_per_window": true,
+    "resource_monitor": {
+      "track_cpu": true,
+      "track_ram": true,
+      "auto_suspend_if_exceed": true,
+      "max_ram_per_session_mb": 2048
+    },
+    "cloud_first_routing": true
+  },
+  "backend_api": {
+    "host": "0.0.0.0",
+    "port": 3000,
+    "cors_enabled": true
+  },
+  "auto_start_services": ["ollama", "n8n", "nullclaw_gateway"]
+}

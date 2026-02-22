@@ -1,0 +1,150 @@
+{
+  "agents": [
+    {
+      "name": "General Chat Agent",
+      "folder": "general-chat",
+      "model": "llama3",
+      "type": "chat",
+      "provider": "ollama",
+      "auto_start": false,
+      "description": "General-purpose chat agent using Llama 3"
+    },
+    {
+      "name": "Codex Style Agent",
+      "folder": "codex-style",
+      "model": "deepseek-coder",
+      "type": "code",
+      "provider": "ollama",
+      "auto_start": false,
+      "description": "Code generation agent using DeepSeek Coder"
+    },
+    {
+      "name": "Claude Style Agent",
+      "folder": "claude-style",
+      "model": "qwen2.5-coder",
+      "type": "advanced_code",
+      "provider": "ollama",
+      "auto_start": false,
+      "description": "Advanced coding agent using Qwen 2.5 Coder"
+    },
+    {
+      "name": "OpenCode CLI",
+      "folder": "opencode-cli",
+      "model": "deepseek-coder",
+      "type": "cli",
+      "provider": "ollama",
+      "auto_start": false,
+      "description": "CLI-based coding agent via Ollama"
+    },
+    {
+      "name": "Qwen CLI",
+      "folder": "qwen-cli",
+      "model": "qwen2.5-coder",
+      "type": "cli",
+      "provider": "ollama",
+      "auto_start": false,
+      "description": "Qwen-powered CLI agent"
+    },
+    {
+      "name": "Kilo Code CLI",
+      "folder": "kilo-code-cli",
+      "model": "deepseek-coder",
+      "type": "cli",
+      "provider": "ollama",
+      "auto_start": false,
+      "description": "Kilo Code CLI agent"
+    },
+    {
+      "name": "Cline CLI",
+      "folder": "cline-cli",
+      "model": "llama3",
+      "type": "cli",
+      "provider": "ollama",
+      "auto_start": false,
+      "description": "Cline-style CLI agent"
+    },
+    {
+      "name": "Gemini CLI",
+      "folder": "gemini-cli",
+      "model": "llama3",
+      "type": "cli",
+      "provider": "ollama",
+      "fallback": "ollama-compatible-gateway",
+      "auto_start": false,
+      "description": "Gemini-style CLI with Ollama fallback"
+    },
+    {
+      "name": "Claude Code",
+      "folder": "claude-code",
+      "model": "qwen3-coder:480b-cloud",
+      "type": "advanced_code",
+      "provider": "cloud-paid",
+      "auto_start": false,
+      "description": "Claude Code agent using cloud Qwen 3 Coder"
+    },
+    {
+      "name": "Codex",
+      "folder": "codex",
+      "model": "qwen3-coder:480b-cloud",
+      "type": "code_generation",
+      "provider": "cloud-paid",
+      "auto_start": false,
+      "description": "Codex agent for code generation"
+    },
+    {
+      "name": "OpenCode",
+      "folder": "opencode",
+      "model": "minimax-m2.5:cloud",
+      "type": "cli_coding",
+      "provider": "cloud-paid",
+      "auto_start": false,
+      "description": "OpenCode CLI coding agent"
+    },
+    {
+      "name": "Droid",
+      "folder": "droid",
+      "model": "kimi-k2.5:cloud",
+      "type": "mobile_code_agent",
+      "provider": "cloud-paid",
+      "auto_start": false,
+      "description": "Mobile-focused code agent"
+    },
+    {
+      "name": "Goose",
+      "folder": "goose",
+      "model": "minimax-m2.5:cloud",
+      "type": "automation_code_agent",
+      "provider": "cloud-paid",
+      "auto_start": false,
+      "description": "Automation and code generation agent"
+    },
+    {
+      "name": "Pi",
+      "folder": "pi",
+      "model": "gpt-oss:120b-cloud",
+      "type": "lightweight_code_agent",
+      "provider": "cloud-paid",
+      "auto_start": false,
+      "description": "Lightweight code assistant"
+    },
+    {
+      "name": "OpenClaw Assistant",
+      "folder": "openclaw-assistant",
+      "model": "gpt-oss:120b-cloud",
+      "type": "general_assistant",
+      "provider": "cloud-paid",
+      "auto_start": false,
+      "description": "General-purpose AI assistant"
+    }
+  ],
+  "plugin_folder": "./agents/",
+  "auto_detect_plugins": true,
+  "install_remove_control": true,
+  "agent_schema": {
+    "agent_name": "string",
+    "install_script": "install.sh",
+    "start_script": "start.sh",
+    "stop_script": "stop.sh",
+    "required_model": "ollama_model"
+  }
+}

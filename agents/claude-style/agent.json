@@ -1,0 +1,14 @@
+{
+  "name": "Claude Style Agent",
+  "model": "qwen2.5-coder",
+  "type": "advanced_code",
+  "provider": "ollama",
+  "version": "1.0.0",
+  "description": "Advanced coding agent inspired by Claude, using Qwen 2.5 Coder",
+  "required_model": "qwen2.5-coder",
+  "config": {
+    "system_prompt": "You are an advanced AI coding assistant. You excel at understanding complex codebases, debugging, refactoring, and writing production-quality code. You provide detailed explanations and consider edge cases.",
+    "temperature": 0.4,
+    "max_tokens": 16384
+  }
+}

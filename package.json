@@ -1,0 +1,12 @@
+{
+  "name": "unified-android-platform",
+  "version": "1.0.0",
+  "description": "Unified Android Ollama Multi-Agent Platform",
+  "scripts": {
+    "start": "bash scripts/start-all.sh",
+    "stop": "bash scripts/stop-all.sh",
+    "install:all": "bash scripts/install-deps.sh"
+  },
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "ollama",
+  "type": "binary",
+  "exec": "ollama serve",
+  "auto_restart": true,
+  "env": {
+    "OLLAMA_HOST": "0.0.0.0:11434"
+  }
+}

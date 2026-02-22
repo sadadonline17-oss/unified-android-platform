@@ -1,0 +1,90 @@
+{
+  "models": {
+    "local": [
+      {
+        "name": "llama3",
+        "provider": "ollama",
+        "type": "chat",
+        "size": "4.7GB",
+        "min_ram_gb": 4,
+        "context_length": 8192,
+        "description": "General-purpose LLM for chat and reasoning"
+      },
+      {
+        "name": "phi3",
+        "provider": "ollama",
+        "type": "chat",
+        "size": "2.2GB",
+        "min_ram_gb": 2,
+        "context_length": 4096,
+        "description": "Lightweight LLM for low-RAM devices"
+      },
+      {
+        "name": "deepseek-coder",
+        "provider": "ollama",
+        "type": "code",
+        "size": "3.8GB",
+        "min_ram_gb": 4,
+        "context_length": 16384,
+        "description": "Specialized coding model"
+      },
+      {
+        "name": "qwen2.5-coder",
+        "provider": "ollama",
+        "type": "code",
+        "size": "4.7GB",
+        "min_ram_gb": 6,
+        "context_length": 32768,
+        "description": "Advanced coding model with large context"
+      }
+    ],
+    "cloud_free": [
+      {
+        "name": "llama3-free",
+        "provider": "cloud-gateway",
+        "type": "chat",
+        "endpoint": "auto",
+        "description": "Free cloud-hosted Llama 3"
+      },
+      {
+        "name": "qwen2.5-coder-free",
+        "provider": "cloud-gateway",
+        "type": "code",
+        "endpoint": "auto",
+        "description": "Free cloud-hosted Qwen 2.5 Coder"
+      }
+    ],
+    "cloud_paid": [
+      {
+        "name": "qwen3-coder:480b-cloud",
+        "provider": "cloud-paid",
+        "type": "advanced_code",
+        "description": "Qwen 3 Coder 480B - Premium cloud model"
+      },
+      {
+        "name": "gpt-oss:120b-cloud",
+        "provider": "cloud-paid",
+        "type": "general",
+        "description": "GPT OSS 120B - Open source GPT cloud model"
+      },
+      {
+        "name": "minimax-m2.5:cloud",
+        "provider": "cloud-paid",
+        "type": "code",
+        "description": "MiniMax M2.5 - Cloud coding model"
+      },
+      {
+        "name": "kimi-k2.5:cloud",
+        "provider": "cloud-paid",
+        "type": "mobile_code",
+        "description": "Kimi K2.5 - Mobile-optimized code model"
+      },
+      {
+        "name": "glm-5:cloud",
+        "provider": "cloud-paid",
+        "type": "advanced",
+        "description": "GLM 5 - Advanced cloud model"
+      }
+    ]
+  }
+}

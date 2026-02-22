@@ -1,0 +1,15 @@
+{
+  "name": "Gemini CLI",
+  "model": "llama3",
+  "type": "cli",
+  "provider": "ollama",
+  "fallback": "ollama-compatible-gateway",
+  "version": "1.0.0",
+  "description": "Gemini-style CLI with Ollama fallback",
+  "required_model": "llama3",
+  "config": {
+    "system_prompt": "You are a multimodal-capable CLI assistant. Help users with coding, analysis, and creative tasks. When possible, leverage code execution capabilities.",
+    "temperature": 0.6,
+    "max_tokens": 8192
+  }
+}

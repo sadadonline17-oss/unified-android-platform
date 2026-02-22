@@ -1,0 +1,14 @@
+{
+  "name": "Codex Style Agent",
+  "model": "deepseek-coder",
+  "type": "code",
+  "provider": "ollama",
+  "version": "1.0.0",
+  "description": "Code generation agent inspired by Codex, using DeepSeek Coder",
+  "required_model": "deepseek-coder",
+  "config": {
+    "system_prompt": "You are an expert code generation AI. Generate clean, efficient, well-documented code. Support all major programming languages.",
+    "temperature": 0.3,
+    "max_tokens": 8192
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "OpenCode",
+  "model": "minimax-m2.5:cloud",
+  "type": "cli_coding",
+  "provider": "cloud-paid",
+  "version": "1.0.0",
+  "description": "OpenCode CLI coding agent via MiniMax M2.5",
+  "required_model": "minimax-m2.5:cloud",
+  "config": {
+    "system_prompt": "You are OpenCode, a CLI-first coding agent. Help users write, modify, and debug code from the command line. Be efficient and output well-formatted code.",
+    "temperature": 0.3,
+    "max_tokens": 16384
+  }
+}
