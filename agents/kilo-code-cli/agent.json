@@ -1,14 +1,5 @@
 {
-  "name": "Kilo Code CLI",
-  "model": "deepseek-coder",
+  "name": "kilo-code-cli",
   "type": "cli",
-  "provider": "ollama",
-  "version": "1.0.0",
-  "description": "Kilo Code CLI agent for streamlined code tasks",
-  "required_model": "deepseek-coder",
-  "config": {
-    "system_prompt": "You are Kilo Code, a fast and efficient coding CLI. Help users generate code snippets, fix bugs, and write scripts. Be direct and precise.",
-    "temperature": 0.3,
-    "max_tokens": 8192
-  }
+  "description": "kilo-code-cli agent plugin"
 }

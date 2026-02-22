@@ -2,25 +2,9 @@
   "local_endpoint": "http://localhost:11434",
   "cloud_free_mode": true,
   "auto_model_pull": true,
-  "auto_detect_ram": true,
-  "ram_suggestion_logic": {
-    "under_4gb": {
-      "default_model": "phi3",
-      "fallback": null,
-      "max_context": 2048
-    },
-    "4_to_8gb": {
-      "default_model": "llama3",
-      "fallback": "phi3",
-      "max_context": 4096
-    },
-    "above_8gb": {
-      "default_model": "qwen2.5-coder",
-      "fallback": "llama3",
-      "max_context": 8192
-    }
-  },
-  "pull_on_first_use": true,
-  "health_check_interval_ms": 30000,
-  "timeout_ms": 120000
+  "ram_tiers": {
+    "under_4gb": { "default": "phi3", "fallback": null },
+    "4_to_8gb": { "default": "llama3", "fallback": "phi3" },
+    "above_8gb": { "default": "qwen2.5-coder", "fallback": "llama3" }
+  }
 }

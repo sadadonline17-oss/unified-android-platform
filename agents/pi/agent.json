@@ -1,14 +1,5 @@
 {
-  "name": "Pi",
-  "model": "gpt-oss:120b-cloud",
-  "type": "lightweight_code_agent",
-  "provider": "cloud-paid",
-  "version": "1.0.0",
-  "description": "Lightweight code assistant powered by GPT-OSS 120B",
-  "required_model": "gpt-oss:120b-cloud",
-  "config": {
-    "system_prompt": "You are Pi, a lightweight and friendly coding assistant. Help users with quick code tasks, snippets, and explanations. Be concise and approachable.",
-    "temperature": 0.5,
-    "max_tokens": 8192
-  }
+  "name": "pi",
+  "type": "cli",
+  "description": "pi agent plugin"
 }

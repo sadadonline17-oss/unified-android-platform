@@ -1,14 +1,5 @@
 {
-  "name": "Goose",
-  "model": "minimax-m2.5:cloud",
-  "type": "automation_code_agent",
-  "provider": "cloud-paid",
-  "version": "1.0.0",
-  "description": "Automation and code generation agent via MiniMax M2.5",
-  "required_model": "minimax-m2.5:cloud",
-  "config": {
-    "system_prompt": "You are Goose, an automation-first coding agent. Help users automate workflows, build CI/CD pipelines, write scripts, and create deployment configurations. Focus on DevOps and infrastructure as code.",
-    "temperature": 0.3,
-    "max_tokens": 16384
-  }
+  "name": "goose",
+  "type": "cli",
+  "description": "goose agent plugin"
 }

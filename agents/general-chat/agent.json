@@ -1,14 +1,5 @@
 {
-  "name": "General Chat Agent",
-  "model": "llama3",
-  "type": "chat",
-  "provider": "ollama",
-  "version": "1.0.0",
-  "description": "General-purpose chat agent using Llama 3",
-  "required_model": "llama3",
-  "config": {
-    "system_prompt": "You are a helpful, friendly AI assistant. Answer questions clearly and concisely.",
-    "temperature": 0.7,
-    "max_tokens": 4096
-  }
+  "name": "general-chat",
+  "type": "cli",
+  "description": "general-chat agent plugin"
 }

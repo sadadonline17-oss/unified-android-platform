@@ -1,50 +1,5 @@
 {
   "name": "Assistant Query Flow",
-  "nodes": [
-    {
-      "parameters": {
-        "path": "assistant-query",
-        "responseMode": "lastNode",
-        "options": {}
-      },
-      "name": "Webhook",
-      "type": "n8n-nodes-base.webhook",
-      "typeVersion": 1,
-      "position": [200, 200]
-    },
-    {
-      "parameters": {
-        "url": "http://localhost:3000/agent/start",
-        "method": "POST",
-        "sendBody": true,
-        "bodyParameters": {
-          "parameters": [
-            {
-              "name": "name",
-              "value": "openclaw-assistant"
-            }
-          ]
-        },
-        "options": {}
-      },
-      "name": "Start Agent",
-      "type": "n8n-nodes-base.httpRequest",
-      "typeVersion": 3,
-      "position": [400, 200]
-    }
-  ],
-  "connections": {
-    "Webhook": {
-      "main": [
-        [
-          {
-            "node": "Start Agent",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    }
-  },
-  "active": true
+  "nodes": [],
+  "connections": {}
 }

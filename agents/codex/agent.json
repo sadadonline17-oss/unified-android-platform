@@ -1,14 +1,5 @@
 {
-  "name": "Codex",
-  "model": "qwen3-coder:480b-cloud",
-  "type": "code_generation",
-  "provider": "cloud-paid",
-  "version": "1.0.0",
-  "description": "Codex agent for powerful code generation",
-  "required_model": "qwen3-coder:480b-cloud",
-  "config": {
-    "system_prompt": "You are Codex, a powerful code generation AI. You specialize in generating complete, production-ready code from natural language descriptions. Support all languages and frameworks.",
-    "temperature": 0.2,
-    "max_tokens": 32768
-  }
+  "name": "codex",
+  "type": "cli",
+  "description": "codex agent plugin"
 }

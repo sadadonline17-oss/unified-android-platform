@@ -1,54 +1,5 @@
 {
-  "name": "AI Code Generation Flow",
-  "nodes": [
-    {
-      "parameters": {
-        "path": "generate-code",
-        "responseMode": "lastNode",
-        "options": {}
-      },
-      "name": "Webhook",
-      "type": "n8n-nodes-base.webhook",
-      "typeVersion": 1,
-      "position": [250, 300]
-    },
-    {
-      "parameters": {
-        "url": "http://localhost:3000/chat/completions",
-        "method": "POST",
-        "sendBody": true,
-        "bodyParameters": {
-          "parameters": [
-            {
-              "name": "model",
-              "value": "qwen2.5-coder"
-            },
-            {
-              "name": "messages",
-              "value": "=[{\"role\":\"user\",\"content\":\"{{$json.body.prompt}}\"}]"
-            }
-          ]
-        },
-        "options": {}
-      },
-      "name": "Call Gateway",
-      "type": "n8n-nodes-base.httpRequest",
-      "typeVersion": 3,
-      "position": [450, 300]
-    }
-  ],
-  "connections": {
-    "Webhook": {
-      "main": [
-        [
-          {
-            "node": "Call Gateway",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    }
-  },
-  "active": true
+  "name": "AI Code Generation",
+  "nodes": [],
+  "connections": {}
 }

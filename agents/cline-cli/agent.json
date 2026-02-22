@@ -1,14 +1,5 @@
 {
-  "name": "Cline CLI",
-  "model": "llama3",
+  "name": "cline-cli",
   "type": "cli",
-  "provider": "ollama",
-  "version": "1.0.0",
-  "description": "Cline-style CLI agent for interactive coding",
-  "required_model": "llama3",
-  "config": {
-    "system_prompt": "You are Cline, an interactive CLI coding assistant. You can read files, write code, run commands, and help debug issues. Work step by step.",
-    "temperature": 0.5,
-    "max_tokens": 8192
-  }
+  "description": "cline-cli agent plugin"
 }
