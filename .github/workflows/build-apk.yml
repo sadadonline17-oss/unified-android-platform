@@ -30,17 +30,17 @@ jobs:
 
       - name: Install Dependencies
         run: flutter pub get
-        working-directory: android
+        working-directory: android/android
 
       - name: Build APK
         run: flutter build apk --release
-        working-directory: android
+        working-directory: android/android
 
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:
           name: app-release-apk
-          path: android/build/app/outputs/flutter-apk/app-release.apk
+          path: android/android/build/app/outputs/flutter-apk/app-release.apk
 
       - name: Create Release
         if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
